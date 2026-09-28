@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="100%" height="100%">
+  <!-- Definition of gradients if needed -->
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEAB5" />
+      <stop offset="50%" stop-color="#C9A84C" />
+      <stop offset="100%" stop-color="#9B7E30" />
+    </linearGradient>
+  </defs>
+
+  <!-- Group for Logo Icon -->
+  <g transform="translate(400, 75)" id="logo-icon">
+    <!-- Globe lines (inside the pod) -->
+    <!-- Clip path to keep globe inside the pod shape -->
+    <clipPath id="podClip">
+      <path d="M -90,-5 C -45,-55 45,-55 90,-5 C 50,45 -50,45 -90,-5 Z" />
+    </clipPath>
+
+    <!-- Globe Grid Lines (Clipped) -->
+    <g clip-path="url(#podClip)">
+      <circle cx="0" cy="-5" r="45" fill="none" stroke="url(#goldGradient)" stroke-width="1" opacity="0.3" />
+      <!-- Latitude lines -->
+      <line x1="-90" y1="-15" x2="90" y2="-15" stroke="url(#goldGradient)" stroke-width="0.75" opacity="0.4" />
+      <line x1="-90" y1="5" x2="90" y2="5" stroke="url(#goldGradient)" stroke-width="0.75" opacity="0.4" />
+      <line x1="-90" y1="-30" x2="90" y2="-30" stroke="url(#goldGradient)" stroke-width="0.75" opacity="0.4" />
+      <line x1="-90" y1="20" x2="90" y2="20" stroke="url(#goldGradient)" stroke-width="0.75" opacity="0.4" />
+      <!-- Longitude curves -->
+      <path d="M 0,-50 Q -25,-5 0,40" fill="none" stroke="url(#goldGradient)" stroke-width="0.75" opacity="0.4" />
+      <path d="M 0,-50 Q 25,-5 0,40" fill="none" stroke="url(#goldGradient)" stroke-width="0.75" opacity="0.4" />
+      <path d="M 0,-50 Q -50,-5 0,40" fill="none" stroke="url(#goldGradient)" stroke-width="0.75" opacity="0.4" />
+      <path d="M 0,-50 Q 50,-5 0,40" fill="none" stroke="url(#goldGradient)" stroke-width="0.75" opacity="0.4" />
+      <line x1="0" y1="-50" x2="0" y2="40" stroke="url(#goldGradient)" stroke-width="0.75" opacity="0.4" />
+    </g>
+
+    <!-- Cardamom Pod Outer Shell & Folds -->
+    <!-- Pointed tips of cardamom pod -->
+    <path d="M -90,-5 C -45,-55 45,-55 90,-5 C 50,45 -50,45 -90,-5 Z" fill="none" stroke="url(#goldGradient)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Ribs/Folds of the pod -->
+    <path d="M -90,-5 C -40,-25 40,-25 90,-5" fill="none" stroke="url(#goldGradient)" stroke-width="1.5" stroke-dasharray="2 1" />
+    <path d="M -90,-5 C -40,15 40,15 90,-5" fill="none" stroke="url(#goldGradient)" stroke-width="1.5" stroke-dasharray="2 1" />
+    
+    <!-- Little details at the tips of the pod -->
+    <path d="M -90,-5 L -105,-8 M -90,-5 L -100,-2 M -90,-5 L -103,2" fill="none" stroke="url(#goldGradient)" stroke-width="2" />
+    <path d="M 90,-5 L 105,-2 M 90,-5 L 100,-8 M 90,-5 L 103,3" fill="none" stroke="url(#goldGradient)" stroke-width="2" />
+  </g>
+
+  <!-- Wordmark "Cardapure" -->
+  <text x="400" y="210" font-family="'Cormorant Garamond', Garamond, serif" font-size="70" text-anchor="middle" fill="url(#goldGradient)" letter-spacing="2">Cardapure</text>
+  
+  <!-- "Spices" Subtitle -->
+  <line x1="280" y1="245" x2="350" y2="245" stroke="url(#goldGradient)" stroke-width="1.5" opacity="0.6" />
+  <text x="400" y="250" font-family="'Montserrat', 'Inter', sans-serif" font-size="16" font-weight="600" text-anchor="middle" fill="url(#goldGradient)" letter-spacing="10">SPICES</text>
+  <line x1="450" y1="245" x2="520" y2="245" stroke="url(#goldGradient)" stroke-width="1.5" opacity="0.6" />
+
+  <!-- "FROM IDUKKI, KERALA" Origin -->
+  <text x="400" y="285" font-family="'Montserrat', 'Inter', sans-serif" font-size="12" font-weight="500" text-anchor="middle" fill="url(#goldGradient)" letter-spacing="6" opacity="0.8">FROM IDUKKI, KERALA</text>
+</svg>
